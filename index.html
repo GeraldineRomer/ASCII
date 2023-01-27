@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ASCII</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Ingresa un texto</h2>
+        <br><br><br><br><br><br><br>
+        <div class="col m12 s12">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <textarea id="text" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Ingresa un texto</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col s6 m6">
+            <div class="row">
+                <button class="btn-floating btn-large waves-effect waves-light #64b5f6 blue lighten-2" onclick="return traducir()"><i class="material-icons">check_circle</i></button>
+                <button class="btn-floating btn-large waves-effect waves-light #64b5f6 blue lighten-2" onclick="return cancelar()"><i class="material-icons">cancel</i></button>
+            </div>
+        </div>
+        <div class="col s12 m12" style="display: none;" id="div_tabla">
+            <div class="row">
+                <table id="tabla">
+                    <!-- style="display: none; -->
+                    <thead>
+                        <tr>
+                            <th>Cod.Ascii</th>
+                            <th>128</th>
+                            <th>64</th>
+                            <th>32</th>
+                            <th>16</th>
+                            <th>8</th>
+                            <th>4</th>
+                            <th>2</th>
+                            <th>1</th>
+                        </tr>
+                    </thead>
+                    <tbody class="centered">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./traductor.js"></script>
+    </html>
